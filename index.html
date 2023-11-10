@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Culture - HOME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"></style>
+</head>
+<body>
+    <header> 
+        <div class="logo-and-search">
+            <a href="index.html" class="logo"><img src="img/logo2.png" alt=""></a>
+            <a class="search-icon"><i class='bx bx-search-alt'></i></a>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Pesquisar...">
+        </div>
+
+        <!-- PARA MAIS ABAS DESCOMENTE AQUI
+        <ul class="menu-nav">
+            <li><a href="#">home</a></li>
+            <li><a href="#">carrinho</a></li>
+            <li><a href="#">login</a></li>
+        </ul> -->
+
+        <div class="icon-nav">
+          <!-- <a href="#"><i class='bx bx-search-alt'></i></i></a> -->  
+          <a href="carrinho.html" class="responsive-icon" data-name="Carrinho"><i class='bx bx-cart'></i></a>
+          <a href="login.html" class="responsive-icon" data-name="Login"><i class='bx bx-user'></i></a>
+          <a href="index.html" class="responsive-icon" data-name="Home"><i class='bx bx-home'></i></a>
+        </div>
+    </header>
+
+    <section class="main-home">
+        <div class="main-text">
+            <h5> Advanced Culture </h5>
+            <h1> Novas <br> Coleções </h1>
+            <p> Revolucionando a moda e o estilo. </p>
+
+            <a href="#" id="button-scroll" class="main-btn"> Veja agora! <i class="bx bx-right-arrow-alt"></i> </a>
+        </div>
+    </section>
+
+    <section class="menu-produtos" id="produtos">
+        <div class="produto-texto">
+            <h2>Produtos 
+                <select id="categorySelect">
+                  <option value="all">Todas as Categorias</option>
+                  <option value="Esportivo">Esportivo</option>
+                  <option value="Casual">Casual</option>
+                  <option value="Corrida">Corrida</option>
+                </select>
+              </h2>
+              
+        </div>
+
+        <div id="produto">
+
+        </div>
+        <div id="nome" class="nomeStatus"></div>
+    </section>
+
+    <script src="js/index.js"></script>
+    <script src="js/addToCart.js"></script>
+</body>
+</html>

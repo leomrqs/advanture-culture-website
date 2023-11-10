@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Produto</title>
+</head>
+<body>
+    <h1>Cadastro de Produto</h1>
+    <form id="produtoForm" >
+        <label for="nomeProduto">Nome do Produto:</label>
+        <input type="text" id="nomeProduto" name="nomeProduto" required><br><br>
+
+        <label for="precoProduto">Preço do Produto:</label>
+        <input type="text" id="precoProduto" name="precoProduto" required><br><br>
+
+        <label for="imagemProduto">Imagem do Produto:</label>
+        <input type="file" id="imagemProduto" name="imagemProduto" accept="image/*" required><br><br>
+
+        <input type="button" value="Cadastrar Produto" onclick="mandarDados()">
+    </form>
+
+    <script src="js/enviar.js"></script>
+</body>
+</html>

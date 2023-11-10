@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-search">
+            <a href="index.html" class="logo"><img src="img/logo2.png" alt=""></a>
+        </div>
+        <div class="icon-nav">
+            <a href="login.html"><i class='bx bx-user'></i></a>
+            <a href="index.html"><i class='bx bx-home'></i></a>
+        </div>
+    </header>
+
+    <div class="checkoutfinalizar-container">
+        <div class="card-checkout">
+            <h1>Finalize seu Pedido</h1>
+            <form id="checkoutfinalizarForm">
+                <div class="checkoutfinalizar-input-group">
+                    <label for="fullName">Nome Completo:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="checkoutfinalizar-input-group">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required pattern="\d{11}">
+                </div>
+
+                <div class="checkoutfinalizar-input-group">
+                    <label for="address">Endereço:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="checkoutfinalizar-payment-methods">
+                    <p>Método de Pagamento:</p>
+                    <div class="checkoutfinalizar-input-group">
+                        <label for="creditCard" class="payment-method-label">
+                            <input type="radio" id="creditCard" name="paymentMethod" value="creditCard" checked>
+                            Cartão de Crédito
+                        </label>
+                    </div>
+                    
+                    <div class="checkoutfinalizar-input-group">
+                        <label for="debitCard" class="payment-method-label">
+                            <input type="radio" id="debitCard" name="paymentMethod" value="debitCard">
+                            Cartão de Débito
+                        </label>
+                    </div>
+                
+                    <div class="checkoutfinalizar-input-group">
+                        <label for="pix" class="payment-method-label">
+                            <input type="radio" id="pix" name="paymentMethod" value="pix">
+                            Pix
+                        </label>
+                    </div>
+                    <p>Valor: </p>
+                    <div id="total"></div>
+                    <div id="cardDetails" style="display:none;">
+                        <div class="checkoutfinalizar-input-group">
+                            <label for="cardNumber">Número do Cartão:</label>
+                            <input type="text" id="cardNumber" name="cardNumber" pattern="\d{16}" required>
+                        </div>
+                
+                        <div class="checkoutfinalizar-input-group">
+                            <label for="cardExpiration">Data de Expiração:</label>
+                            <input type="text" id="cardExpiration" name="cardExpiration" placeholder="MM/AA" pattern="\d{2}/\d{2}" required>
+                        </div>
+                
+                        <div class="checkoutfinalizar-input-group">
+                            <label for="cardCVV">CVV:</label>
+                            <input type="text" id="cardCVV" name="cardCVV" pattern="\d{3}" required>
+                        </div>
+                
+                        <div class="checkoutfinalizar-input-group">
+                            <label for="cardHolderName">Nome no Cartão:</label>
+                            <input type="text" id="cardHolderName" name="cardHolderName" required>  
+                        </div>
+                    </div>
+
+                <button type="submit" class="checkoutfinalizar-button" onclick="finalizarCompra()">Confirmar Pedido</button>
+            </form>
+            <div class="qr-code-container" id="qrCodeContainer">
+                <img src="img/qrcode.png" alt="QR Code" id="qrCodeImage" style="display:none;">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/carrinho.js"></script>
+    <script src="js/excluirProdutoDoProduto.js"></script>
+    <script src="js/limparCarrinho.js"></script>
+    <script src ="js/finalizarCompra.js"></script>
+    <script src ="js/finalizarQRCODE.js"></script>
+</body>
+</html>

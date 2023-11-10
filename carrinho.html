@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-search">
+            <a href="index.html" class="logo"><img src="img/logo2.png" alt=""></a>
+        </div>
+        <div class="icon-nav">
+            <a href="login.html"><i class='bx bx-user'></i></a>
+            <a href="index.html"><i class='bx bx-home'></i></a>
+        </div>
+    </header>
+
+    <div class="full-card">
+        <h1>Seu Carrinho</h1>
+    <div id="carrinhoInserido"></div>
+    <div id="total"></div>
+        <div class="checkout-button-container">
+            <button class="checkout-button" onclick="window.location.href='finalizarcompra.html';">Finalizar compra</button>
+            <button onclick="limparCarrinho()">Limpar carrinho</button>
+        </div>
+        <button id="go-to-compras" class="compras-button" onclick="window.location.href='compras.html';">Ir para Compras</button>
+    </div>
+    <script src="js/carrinho.js"></script>
+    <script src="js/excluirProdutoDoProduto.js"></script>
+    <script src="js/limparCarrinho.js"></script>
+    <script src ="js/finalizarCompra.js"></script>
+</body>
+</html>

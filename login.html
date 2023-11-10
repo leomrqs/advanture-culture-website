@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"></style>
+</head>
+<body>
+    <header> 
+        <div class="logo-and-search">
+            <a href="index.html" class="logo"><img src="img/logo2.png" alt=""></a>
+        </div>
+
+        <!-- PARA MAIS ABAS DESCOMENTE AQUI
+        <ul class="menu-nav">
+            <li><a href="#">home</a></li>
+            <li><a href="#">carrinho</a></li>
+            <li><a href="#">login</a></li>
+        </ul> -->
+
+        <div class="icon-nav">
+          <!-- <a href="#"><i class='bx bx-search-alt'></i></i></a> -->  
+            <a href="index.html"><i class='bx bx-home'></i></a>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="login-card">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu usuário aqui...">
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Digite sua senha aqui...">
+                </div>
+                <div class="button-group">
+                    <button type="button" onclick="buscarDados()">Login</button>
+                    <button type="button" id="registerBtn">Registrar</button>
+                </div>
+                <div id="resultado"></div>
+            
+            </form>
+        </div>
+    </section>
+    
+
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
